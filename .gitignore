@@ -1,5 +1,7 @@
+.vs/
 bin/
 obj/
-.vs/
+*.suo
 *.user
-.env
+*.vsidx
+*.futdcache.v2
