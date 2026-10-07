@@ -6,7 +6,7 @@ using System.Text;
 namespace _1._10_Homework
 {
     
-    internal class TemperatureСonverter
+    internal class TemperatureConverter
     {
         public static void Run()
         {
