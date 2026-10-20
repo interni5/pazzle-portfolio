@@ -92,16 +92,14 @@ class Program
 
     static int CountVowels(string text)
     {
-        int count = 0;
-        text = text.ToLower();
-
-        foreach (char c in text)
+        if (string.IsNullOrEmpty(text))
         {
-            if ("aeiouy".Contains(c))
-            {
-                count++;
-            }
+            return 0;
         }
-        return count;
+
+        char firstсhar = char.ToLower(text[0]);
+        int isvowel = "aeiouy".Contains(firstсhar) ? 1 : 0;
+
+        return isvowel + CountVowels(text.Substring(1));
     }
 }
